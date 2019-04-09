@@ -46,7 +46,10 @@ public class Pessoa {
                 '}';
     }
 
-    public boolean updateEmail(String r, String e){}
+    public boolean updateEmail(String r, String e){
+
+        return true;
+    }
 
 
 
