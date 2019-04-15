@@ -43,6 +43,11 @@ public class Telefone {
     }
 
 
+    public void imprime(Telefone t){
+        System.out.println(t.dadosT.get("Alexandre"));
+
+    }
+
 
     @Override
     public String toString() {
