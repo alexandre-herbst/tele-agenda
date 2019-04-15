@@ -8,9 +8,13 @@ public class Agenda {
 
     // Métodos
 
-    public Agenda(){}
+    public Agenda(){
 
-    public void addPessoa(Pessoa p){}
+    }
+
+    public void addPessoa(Pessoa p){
+
+    }
 
     public boolean removePessoa(String n, String s){
         return true;

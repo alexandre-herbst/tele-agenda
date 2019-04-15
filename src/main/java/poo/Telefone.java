@@ -13,13 +13,24 @@ public class Telefone {
 
     // Declaração dos metodos
     public boolean add(String r, String n){
-        return true;
-
+        if(dadosT.containsKey(r)){
+            return false;
+        }
+        else {
+            dadosT.put(r, n);
+            return true;
+        }
     }
+
+
     public boolean remove(String r){
-        return true;
-
+        if(dadosT.containsKey(r)){
+            dadosT.remove(r);
+            return true;
+        }
+        return false;
     }
+
     public  boolean update(String r, String n){
         return true;
     }
