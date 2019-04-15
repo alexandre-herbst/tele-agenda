@@ -5,6 +5,7 @@ public class Principal {
         Telefone t = new Telefone();
 
         t.add("Alexandre", "9643-0355");
+        t.update("Alexandre", " 9999-9999");
         t.imprime(t);
 
 

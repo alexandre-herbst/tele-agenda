@@ -10,12 +10,23 @@ public class Email {
 
     // Declaração dos metodos
     public boolean add(String r, String n){
-        return true;
-
+        if(dadosE.containsKey(r)){
+            return false;
+        }
+        else{
+            dadosE.put(r, n);
+            return true;
+        }
     }
-    public boolean remove(String r){
-        return true;
 
+    public boolean remove(String r){
+        if(dadosE.containsKey(r)){
+            dadosE.remove(r);
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     public  boolean update(String r, String n){
         return true;
