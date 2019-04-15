@@ -32,7 +32,14 @@ public class Telefone {
     }
 
     public  boolean update(String r, String n){
+        if(dadosT.containsKey(r)){
+            dadosT.put(r, n);
         return true;
+        }
+    else{
+        return false;
+        }
+
     }
 
 

@@ -7,11 +7,7 @@ public class TestaTelefone {
     @Test
     public void testaTelefone(){
         Telefone a = new Telefone();
-        Assert.assertFalse("Este nome ja existe na agenda ","false");
-        Assert.assertTrue("não é um numero válido", "0000-0000");
-        Assert.assertTrue("NÃO é um numero válido", "00000000 ");
-
-
+        Assert.assertFalse("Este nome ja existe na agenda ",a.add("nome", "0000-0000" ));
 
     }
 }
