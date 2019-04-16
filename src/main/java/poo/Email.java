@@ -8,11 +8,18 @@ public class Email {
     public Email(){ }
     private HashMap<String, String> dadosE = new HashMap<>();
 
+    private boolean validaEmail(String email){
+        String emailER = "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-z]{2,})$";
+        return email.matches(emailER);
+    }
+
+
     // Declaração dos metodos
     public boolean add(String r, String n){
-        if(dadosE.containsKey(r)){
-            return false;
-        }
+
+        if(! this.validaEmail(n)) return false;
+        if(dadosE.containsKey(r)) return false;
+
         else{
             dadosE.put(r, n);
             return true;
@@ -29,6 +36,9 @@ public class Email {
         }
     }
     public  boolean update(String r, String n){
+        if(dadosE.containsKey(r)){
+            dadosE.put(r, n);
+        }
         return true;
     }
 
